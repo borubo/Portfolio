@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  display: block;
+}
+
+#close {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#retry {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  right: 90px;
+}
+
+#main {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  margin: 10px auto 0 auto;
+}
+
+canvas {
+  width: 300px;
+  height: 100%;
+  margin: 0 0 0 30%;
+  padding: 0;
+  background: white;
+}
+
+.right {
+  margin: 0 auto 0 40px;
+  padding: 0;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+}
+
+#btn {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  #main {
+    width: 300px;
+    display: block;
+    margin: 50px auto 0 auto;
+  }
+
+  canvas {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .right {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+  }
+
+  #text {
+    display: none;
+  }
+
+  #btn {
+    width: 80%;
+    height: 160px;
+    display: block;
+    margin: 10px auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  #C {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+  }
+
+  #L {
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+  #L img {
+    margin: 10px 15px 10px 5px;
+    padding: 0;
+    width: 80%;
+    height: 80%;
+    user-select: none;
+  }
+
+  #T {
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    user-select: none;
+  }
+
+  #T img {
+    margin: 10%;
+    padding: 0;
+    width: 80%;
+    height: 80%;
+    user-select: none;
+  }
+
+  #R {
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+  #R img {
+    margin: 10px 5px 10px 15px;
+    padding: 0;
+    width: 80%;
+    height: 80%;
+    user-select: none;
+  }
+
+  #B {
+    width: 100%;
+    height: 45px;
+    margin: 15px 0 0 0;
+    padding: 0;
+    user-select: none;
+  }
+
+  #B img {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    height: 60%;
+    user-select: none;
+  }
+}

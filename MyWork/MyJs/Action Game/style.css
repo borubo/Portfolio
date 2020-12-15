@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+main {
+  display: block;
+  width: 800px;
+  margin: 10px auto;
+  padding: 0;
+}
+h1 {
+  display: none;
+}
+
+#btn {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  body {
+    background: black;
+    display: block;
+    text-align: center;
+  }
+  main {
+    display: none;
+  }
+  canvas {
+    display: none;
+  }
+  h1 {
+    display: block;
+    color: white;
+    margin: 20px;
+    font-size: 34px;
+  }
+  #btn {
+    width: 400px;
+    height: 200px;
+    font-size: 64px;
+    font-weight: bold;
+    background: white;
+    color: black;
+    text-align: center;
+    line-height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+}

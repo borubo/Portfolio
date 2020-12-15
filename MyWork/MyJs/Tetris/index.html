@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <button id="close">Close</button>
+    <button id="retry">Retry</button>
+
+    <div id="main">
+      <canvas id="can"></canvas>
+
+      <div class="right">
+        <h2 id="score"></h2>
+        <p id="text">
+          ＜Operating methods＞<br />
+          Cross-keys<br />
+          ◀︎：left move<br />
+          ▶︎：right move<br />
+          ▼：down move<br />
+          Space key：rotation
+        </p>
+      </div>
+
+    </div>
+    <div id="btn">
+      <div id="C">
+        <button id="L"><img src="img/◀︎.png"></button>
+        <button id="T"><img src="img/trun.png"></button>
+        <button id="R"><img src="img/▶︎.png"></button>
+      </div>
+      <button id="B"><img src="img/▼.png"></button>
+    </div>
+
+    <!-- スクリプト読み込み -->
+    <script src="main.js"></script>
+  </body>
+</html>
