@@ -1,0 +1,81 @@
+body {
+  font-family: tahoma;
+  color: #282828;
+  margin: 0px;
+  font-size: 30px;
+}
+
+.nav-bar {
+  background: linear-gradient(-90deg, #7d66ff, #16c0b0);
+  height: 60px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.review-form {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.CtoB {
+  width: 100%;
+  text-align: center;
+}
+.yet {
+  width: 100%;
+  font-size: 40px;
+  color: tomato;
+}
+
+.CtoB li {
+  width: 90%;
+  list-style: none;
+  margin: 5px;
+  padding: 0 0 10px 10px;
+  background: rgb(225, 255, 196);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.CtoB p {
+  margin: 0;
+  padding: 0;
+}
+
+.CtoB button {
+  margin: 0 0 0 95%;
+  padding: 0;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 650px) {
+  .CtoB button {
+    margin: 0 0 0 90%;
+    padding: 0;
+  }
+}

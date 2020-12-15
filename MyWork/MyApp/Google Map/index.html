@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scal=1.0">
+<title>My Map</title>
+<link rel="stylesheet" href="styles.css">
+<!-- バツボタンCSS -->
+<link rel="stylesheet" href="../../MyVue/app.css">
+</head>
+<body>
+  <!-- バツボタン -->
+  <div id="CL">✖︎</div>
+  <h1>Google Map API</h1>
+  <div id="target"></div>
+
+  <div id="SH">
+    <h2>Address Search</h2>
+    <input type="text" id="address">
+    <button id="search">Search</button>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyDlDUuODyUYiGbs3nJQZyCOtPkFwmKaxdY&callback=initMap&libraries=places" async defer></script>
+
+  <!-- バツボタン用スクリプト -->
+  <script src="../../MyVue/main.js"></script>
+</body>
+</html>
