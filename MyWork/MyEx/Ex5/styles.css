@@ -1,0 +1,70 @@
+/* 全体 */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* 右上リンクマーク */
+header {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: rgb(255, 247, 200);
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+header i {
+  margin: 0;
+  padding: 0 5px;
+  cursor: pointer;
+}
+/* メイン画像  */
+main {
+  margin: 0;
+  padding: 0;
+}
+main img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+main img:last-child {
+  display: none;
+}
+/* メイン下リンク画像 */
+aside {
+  margin: 0;
+  padding: 0;
+}
+aside ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+aside li {
+  height: 30px;
+  margin: 10px auto;
+  padding: 0;
+  flex-grow: 1;
+  font-size: 20px;
+  text-align: center;
+  border-right: 1px solid gray;
+}
+aside li:last-child {
+  border: none;
+}
+aside li:hover {
+  background: gray;
+  color: aliceblue;
+}
+/* レスポンシブ(スマホ用) */
+@media screen and (max-width: 650px) {
+  main img:first-child {
+    display: none;
+  }
+  main img:last-child {
+    display: block;
+  }
+}

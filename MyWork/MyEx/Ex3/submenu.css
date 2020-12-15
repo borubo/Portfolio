@@ -1,0 +1,115 @@
+/* Global Menu */
+header > ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  top: 70px;
+}
+header ul.LINK > li {
+  display: inline-block;
+}
+header ul > li > a {
+  margin: 0;
+  padding: 0 10px;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: black;
+}
+header ul > li > span {
+  margin-left: 1.2em;
+}
+header ul > li:hover > a {
+  background-color: #efefef;
+  color: #444;
+}
+
+/* Submenu -LINK- */
+header ul li ul.LINK {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30px;
+  left: -13%;
+  z-index: 1;
+}
+header ul li ul.LINK li {
+  display: block;
+}
+header ul li ul.LINK li a {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  padding-top: 20px;
+  font-size: 20px;
+  background-color: #efefef;
+  color: #444;
+}
+header ul li ul.LINK li a:hover {
+  background-color: #ddd;
+}
+.sample01 ul li ul.LINK {
+  display: none;
+}
+.sample01 ul li:hover ul {
+  display: block;
+}
+/* Submenu -SAVE- */
+header ul li ul.SAVE {
+  position: absolute;
+  top: 30px;
+  left: 20%;
+  z-index: 1;
+}
+header ul li ul.SAVE li {
+  display: block;
+}
+header ul li ul.SAVE li a {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  padding-top: 20px;
+  font-size: 20px;
+  background-color: #efefef;
+  color: #444;
+}
+header ul li ul.SAVE li a:hover {
+  background-color: #ddd;
+}
+.sample01 ul li ul.SAVE {
+  display: none;
+}
+.sample01 ul li:hover ul {
+  display: block;
+}
+/* Submenu -TELL- */
+header ul li ul.TELL {
+  position: absolute;
+  top: 30px;
+  left: 55%;
+  z-index: 1;
+}
+header ul li ul.TELL li {
+  display: block;
+}
+header ul li ul.TELL li a {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  padding-top: 20px;
+  font-size: 20px;
+  background-color: #efefef;
+  color: #444;
+}
+header ul li ul.TELL li a:hover {
+  background-color: #ddd;
+}
+.sample01 ul li ul.TELL {
+  display: none;
+}
+.sample01 ul li:hover ul {
+  display: block;
+}

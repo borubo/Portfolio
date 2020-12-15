@@ -1,0 +1,1108 @@
+/* 全体のレイアウト設定 */
+body {
+  background-color: rgb(255, 255, 255);
+  font-size: 2rm;
+  /* width: 800px; */
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template:
+    "header header header header header header header header header header header header" 100px
+    "...... ...... ...... ...... ...... ..... ....... ...... ...... ...... ...... ......" 20px
+    "...... ...... F1     ...... F2     ...... F3     ...... F4     ...... F5     ......" 200px
+    "...... ...... ...... ...... ...... ..... ....... ...... ...... ...... ...... ......" 10px
+    "...... ...... F6     ...... F7     ...... F8     ...... F9     ...... F10    ......" 200px
+    "...... ...... ...... ...... ...... ..... ....... ...... ...... ...... ...... ......" 10px
+    "...... ...... F11    ...... F12    ...... F13    ...... F14    ...... F15    ......" 200px
+    "...... ...... ...... ...... ...... ..... ....... ...... ...... ...... ...... ......" 10px
+    "footer footer footer footer footer footer footer footer footer footer footer footer" 10px
+    "...... ...... ...... ...... ...... ..... ....... ...... ...... ...... ...... ......" 10px
+    / auto 20px 200px 10px 200px 10px 200px 10px 200px 10px 200px auto;
+}
+/* タイトル */
+header {
+  grid-area: header;
+  margin: 0;
+  padding: 0;
+  background: rgb(125, 123, 255);
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+/* 画像の設定 */
+div img {
+  border-radius: 4px;
+  box-shadow: 2px 2px rgb(163, 163, 163);
+}
+#F1 {
+  width: 100%;
+  grid-area: F1;
+  text-align: center;
+  cursor: pointer;
+}
+#F1:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F2 {
+  width: 100%;
+  grid-area: F2;
+  text-align: center;
+  cursor: pointer;
+}
+#F2:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F3 {
+  width: 100%;
+  grid-area: F3;
+  text-align: center;
+  cursor: pointer;
+}
+#F3:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F4 {
+  width: 100%;
+  grid-area: F4;
+  text-align: center;
+  cursor: pointer;
+}
+#F4:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F5 {
+  width: 100%;
+  grid-area: F5;
+  text-align: center;
+  cursor: pointer;
+}
+#F5:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F6 {
+  width: 100%;
+  grid-area: F6;
+  text-align: center;
+  cursor: pointer;
+}
+#F6:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F7 {
+  width: 100%;
+  grid-area: F7;
+  text-align: center;
+  cursor: pointer;
+}
+#F7:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F8 {
+  width: 100%;
+  grid-area: F8;
+  text-align: center;
+  cursor: pointer;
+}
+#F8:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F9 {
+  width: 100%;
+  grid-area: F9;
+  text-align: center;
+  cursor: pointer;
+}
+#F9:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F10 {
+  width: 100%;
+  grid-area: F10;
+  text-align: center;
+  cursor: pointer;
+}
+#F10:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F11 {
+  width: 100%;
+  grid-area: F11;
+  text-align: center;
+  cursor: pointer;
+}
+#F11:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F12 {
+  width: 100%;
+  grid-area: F12;
+  text-align: center;
+  cursor: pointer;
+}
+#F12:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F13 {
+  width: 100%;
+  grid-area: F13;
+  text-align: center;
+  cursor: pointer;
+}
+#F13:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F14 {
+  width: 100%;
+  grid-area: F14;
+  text-align: center;
+  cursor: pointer;
+}
+#F14:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+
+#F15 {
+  width: 100%;
+  grid-area: F15;
+  text-align: center;
+  cursor: pointer;
+}
+#F15:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  opacity: 0.9;
+}
+/* 余白のスペース補助 */
+#F16 {
+  display: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px rgb(182, 182, 182);
+}
+/* アニメーション画像 */
+img {
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30%;
+  margin: 0;
+  padding: 0;
+}
+/* コピーライト */
+footer {
+  grid-area: footer;
+  margin: 0;
+  padding: 0;
+  font-size: 6px;
+  text-align: center;
+}
+footer p {
+  background-color: rgb(34, 34, 34);
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+/* レスポンシブ1100px */
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 2rm;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+      "header header header header header header header header header" 100px
+      "...... ...... ...... ...... ...... ...... ...... ...... ......" 20px
+      "...... F1     ...... F2     ...... F3     ...... F4     ......" 200px
+      "...... ...... ...... ...... ...... ...... ...... ...... ......" 10px
+      "...... F5     ...... F6     ...... F7     ...... F8     ......" 200px
+      "...... ...... ...... ...... ...... ...... ...... ...... ......" 10px
+      "...... F9     ...... F10    ...... F11    ...... F12    ......" 200px
+      "...... ...... ...... ...... ...... ...... ...... ...... ......" 10px
+      "...... F13    ...... F14    ...... F15    ...... F16    ......" 200px
+      "...... ...... ...... ...... ...... ...... ...... ...... ......" 10px
+      "footer footer footer footer footer footer footer footer footer" 10px
+      "...... ...... ...... ...... ...... ...... ...... ...... ......" 10px
+      / auto 200px 10px 200px 10px 200px 10px 200px auto;
+  }
+  /* 余白のスペース補助 */
+  #F16 {
+    grid-area: F16;
+    font-size: 50px;
+    font-weight: bold;
+    background: gray;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+  }
+  #F16 p {
+    padding-top: 18px;
+  }
+}
+/* レスポンシブ850px */
+@media screen and (max-width: 850px) {
+  body {
+    font-size: 2rm;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+      "header header header header header header header" 100px
+      "...... ...... ...... ...... ...... ...... ......" 20px
+      "......  F1    ...... F2     ...... F3     ......" 200px
+      "...... ...... ...... ...... ...... ...... ......" 10px
+      "......  F4    ...... F5     ...... F6     ......" 200px
+      "...... ...... ...... ...... ...... ...... ......" 10px
+      "......  F7    ...... F8     ...... F9     ......" 200px
+      "...... ...... ...... ...... ...... ...... ......" 10px
+      "......  F10   ...... F11    ...... F12    ......" 200px
+      "...... ...... ...... ...... ...... ...... ......" 10px
+      "......  F13   ...... F14    ...... F15    ......" 200px
+      "...... ...... ...... ...... ...... ...... ......" 10px
+      "footer footer footer footer footer footer footer" 10px
+      "...... ...... ...... ...... ...... ...... ......" 10px
+      / auto 200px 10px 200px 10px 200px auto;
+  }
+  /* 余白のスペース補助 */
+  #F16 {
+    display: none;
+  }
+}
+/* レスポンシブ650px */
+@media screen and (max-width: 650px) {
+  body {
+    font-size: 2rm;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+      "header header header header header" 60px
+      "...... ...... ...... ...... ......" 20px
+      "...... F1     ...... F2     ......" 160px
+      "...... ...... ...... ...... ......" 20px
+      "...... F3     ...... F4     ......" 160px
+      "...... ...... ...... ...... ......" 20px
+      "...... F5     ...... F6     ......" 160px
+      "...... ...... ...... ...... ......" 20px
+      "...... F7     ...... F8     ......" 160px
+      "...... ...... ...... ...... ......" 20px
+      "...... F9     ...... F10    ......" 160px
+      "...... ...... ...... ...... ......" 20px
+      "...... F11    ...... F12    ......" 160px
+      "...... ...... ...... ...... ......" 20px
+      "...... F13    ...... F14    ......" 160px
+      "...... ...... ...... ...... ......" 20px
+      "...... F15    ...... F16    ......" 160px
+      "...... ...... ...... ...... ......" 20px
+      "footer footer footer footer footer" 10px
+      "...... ...... ...... ...... ......" auto
+      / auto 160px 20px 160px auto;
+  }
+  /* タイトル */
+  header h1 {
+    font-size: 40px;
+  }
+  /* 画像のサイズ修正 */
+  div img {
+    width: 160px;
+    height: 160px;
+  }
+  /* 余白のスペース補助 */
+  #F16 {
+    grid-area: F16;
+    width: 160px;
+    height: 160px;
+    font-size: 44px;
+    font-weight: bold;
+    background: gray;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+  }
+  #F16 p {
+    padding-top: 10px;
+  }
+}
+
+/* --------------------------------------------------------------------- */
+#modalF1 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+
+#modalF1 > p {
+  margin: 0 0 20px;
+}
+
+#maskF1.hiddenF1 {
+  display: none;
+}
+
+#modalF1.hiddenF1 {
+  transform: translate(0, -600px);
+}
+
+#maskF1 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF1 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF1:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF2 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF2 > p {
+  margin: 0 0 20px;
+}
+
+#maskF2.hiddenF2 {
+  display: none;
+}
+
+#modalF2.hiddenF2 {
+  transform: translate(0, -600px);
+}
+
+#maskF2 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF2 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF2:hover {
+  opacity: 0.8;
+}
+
+/* --------------------------------------------------------------------- */
+#modalF3 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF3 > p {
+  margin: 0 0 20px;
+}
+
+#maskF3.hiddenF3 {
+  display: none;
+}
+
+#modalF3.hiddenF3 {
+  transform: translate(0, -600px);
+}
+
+#maskF3 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF3 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF3:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF4 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF4 > p {
+  margin: 0 0 20px;
+}
+
+#maskF4.hiddenF4 {
+  display: none;
+}
+
+#modalF4.hiddenF4 {
+  transform: translate(0, -600px);
+}
+
+#maskF4 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF4 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF4:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF5 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF5 > p {
+  margin: 0 0 20px;
+}
+
+#maskF5.hiddenF5 {
+  display: none;
+}
+
+#modalF5.hiddenF5 {
+  transform: translate(0, -600px);
+}
+
+#maskF5 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF5 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF5:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF6 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF6 > p {
+  margin: 0 0 20px;
+}
+
+#maskF6.hiddenF6 {
+  display: none;
+}
+
+#modalF6.hiddenF6 {
+  transform: translate(0, -600px);
+}
+
+#maskF6 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF6 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF6:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF7 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF7 > p {
+  margin: 0 0 20px;
+}
+
+#maskF7.hiddenF7 {
+  display: none;
+}
+
+#modalF7.hiddenF7 {
+  transform: translate(0, -600px);
+}
+
+#maskF7 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF7 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF7:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF8 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF8 > p {
+  margin: 0 0 20px;
+}
+
+#maskF8.hiddenF8 {
+  display: none;
+}
+
+#modalF8.hiddenF8 {
+  transform: translate(0, -600px);
+}
+
+#maskF8 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF8 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF8:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF9 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF9 > p {
+  margin: 0 0 20px;
+}
+
+#maskF9.hiddenF9 {
+  display: none;
+}
+
+#modalF9.hiddenF9 {
+  transform: translate(0, -600px);
+}
+
+#maskF9 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF9 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF9:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF10 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF10 > p {
+  margin: 0 0 20px;
+}
+
+#maskF10.hiddenF10 {
+  display: none;
+}
+
+#modalF10.hiddenF10 {
+  transform: translate(0, -600px);
+}
+
+#maskF10 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF10 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF10:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF11 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF11 > p {
+  margin: 0 0 20px;
+}
+
+#maskF11.hiddenF11 {
+  display: none;
+}
+
+#modalF11.hiddenF11 {
+  transform: translate(0, -600px);
+}
+
+#maskF11 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF11 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF11:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF12 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF12 > p {
+  margin: 0 0 20px;
+}
+
+#maskF12.hiddenF12 {
+  display: none;
+}
+
+#modalF12.hiddenF12 {
+  transform: translate(0, -600px);
+}
+
+#maskF12 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF12 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF12:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF13 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF13 > p {
+  margin: 0 0 20px;
+}
+
+#maskF13.hiddenF13 {
+  display: none;
+}
+
+#modalF13.hiddenF13 {
+  transform: translate(0, -600px);
+}
+
+#maskF13 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF13 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF13:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF14 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF14 > p {
+  margin: 0 0 20px;
+}
+
+#maskF14.hiddenF14 {
+  display: none;
+}
+
+#modalF14.hiddenF14 {
+  transform: translate(0, -800px);
+}
+
+#maskF14 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF14 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF14:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */
+#modalF15 {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  text-align: center;
+  font-size: 26px;
+}
+#modalF15 > p {
+  margin: 0 0 20px;
+}
+
+#maskF15.hiddenF15 {
+  display: none;
+}
+
+#modalF15.hiddenF15 {
+  transform: translate(0, -800px);
+}
+
+#maskF15 {
+  background: gray;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#closeF15 {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(204, 204, 204);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+#closeF15:hover {
+  opacity: 0.8;
+}
+/* --------------------------------------------------------------------- */

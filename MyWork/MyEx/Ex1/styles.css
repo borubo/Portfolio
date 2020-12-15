@@ -1,0 +1,242 @@
+/* 全体 */
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+}
+/* 背景画像 */
+div img {
+  width: 100%;
+  position: fixed;
+  opacity: 1;
+  display: flex;
+  top: 0;
+  left: 25%;
+}
+/* 左側メニュー */
+aside {
+  width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+/* リンク */
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+aside nav li {
+  padding-left: 20px;
+  background: rgb(0, 0, 0);
+  color: #eee;
+  font-weight: bold;
+}
+aside nav li:hover {
+  color: black;
+  background: rgb(141, 141, 141);
+}
+aside nav li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+/* カレンダーエリア */
+div {
+  margin: auto 0 0 0;
+  background: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 8px;
+}
+/* カレンダー */
+table {
+  width: 100%;
+  height: 200px;
+  border-collapse: collapse;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+thead,
+tfoot {
+  background: #eee;
+  border: 2px solid rgb(0, 0, 0);
+}
+th,
+td {
+  padding: 4px;
+  text-align: center;
+  background: white;
+  border: 1px solid rgb(0, 0, 0);
+}
+tbody td:first-child {
+  color: red;
+}
+tbody td:last-child {
+  color: blue;
+}
+tfoot {
+  font-weight: bold;
+}
+td.disabled {
+  opacity: 0.3;
+}
+td.today {
+  font-weight: bold;
+}
+#prev,
+#next,
+#today {
+  cursor: pointer;
+  user-select: none;
+}
+/* コピーライト */
+footer {
+  display: none;
+}
+/* メイン */
+main {
+  flex: 1;
+  margin: 0 auto;
+  vertical-align: top;
+  color: #eee;
+  background-size: 100%;
+  opacity: 0.7;
+  background-color: #e74c3c;
+  animation: bg-color 10s infinite;
+  -webkit-animation: bg-color 10s infinite;
+}
+main h1 {
+  text-align: center;
+}
+main p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* カラーアニメーション */
+@-webkit-keyframes bg-color {
+  0% {
+    background-color: #e74c3c;
+  }
+  20% {
+    background-color: #f1c40f;
+  }
+  40% {
+    background-color: #1abc9c;
+  }
+  60% {
+    background-color: #3498db;
+  }
+  80% {
+    background-color: #9b59b6;
+  }
+  100% {
+    background-color: #e74c3c;
+  }
+}
+@keyframes bg-color {
+  0% {
+    background-color: #e74c3c;
+  }
+  20% {
+    background-color: #f1c40f;
+  }
+  40% {
+    background-color: #1abc9c;
+  }
+  60% {
+    background-color: #3498db;
+  }
+  80% {
+    background-color: #9b59b6;
+  }
+  100% {
+    background-color: #e74c3c;
+  }
+}
+/* レスポンシブ1000px  */
+@media screen and (max-width: 1000px) {
+  /* 全体 */
+  body {
+    height: 1200px;
+    flex-direction: column;
+  }
+  /* 背景 */
+  div img {
+    display: none;
+  }
+  /* 左側メニュー */
+  aside {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  /* リンク */
+  ul {
+    height: 40px;
+    display: flex;
+  }
+  li {
+    flex: 1;
+    font-size: 16px;
+    padding-top: 8px;
+    text-align: center;
+  }
+  /* カレンダー */
+  div {
+    width: 100%;
+    position: absolute;
+    background: none;
+    top: -800%;
+    left: 5%;
+    margin: 0;
+    padding: 0;
+  }
+  table {
+    height: 250px;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  /* メイン */
+  main {
+    width: 100%;
+    flex: 1;
+  }
+  main h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  main p {
+    margin: 0;
+    font-size: 24px;
+  }
+  /* コピーライト */
+  footer {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    background: rgb(126, 126, 126);
+    color: white;
+    font-size: 16px;
+  }
+}
+/* レスポンシブ400px */
+@media screen and (max-width: 500px) {
+  /* メイン */
+  main h1 {
+    font-size: 20px;
+    padding: 6px;
+    margin: 40px auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  div {
+    display: none;
+  }
+}

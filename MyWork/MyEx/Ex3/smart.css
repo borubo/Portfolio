@@ -1,0 +1,65 @@
+/* レスポンシブ(スマホ用) */
+@media screen and (max-width: 650px) {
+  /* タイトル */
+  h1 {
+    margin: 35px 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  /* サイトマップ（PC用） */
+  .sample01 {
+    display: none;
+  }
+  /* メイン見出し */
+  main h1 {
+    top: 50%;
+  }
+  /* サイトマップ（スマホ用） */
+  aside {
+    display: flex;
+    margin: 600px 0 0 0;
+    padding: 0;
+    background: black;
+    color: aliceblue;
+  }
+  aside div {
+    width: 33.33%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  aside div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  aside h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    border: 5px solid rgb(199, 199, 199);
+  }
+  aside li {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    border: 5px solid rgb(199, 199, 199);
+  }
+  aside li:hover {
+    background: white;
+    color: black;
+  }
+  /* コピーライト */
+  footer {
+    margin: 0;
+  }
+}
+/* レスポンシブ（リスト用） */
+@media screen and (max-width: 400px) {
+  main h1 {
+    font-size: 20px;
+    top: 80%;
+    left: 20%;
+  }
+}

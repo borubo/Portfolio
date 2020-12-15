@@ -1,0 +1,224 @@
+/* 全体 */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* タイトル */
+header {
+  height: 50px;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+h1 {
+  margin: 20px 40px;
+  padding: 0;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+header li {
+  margin: 0 20px;
+  padding: 0;
+}
+/* サイトマップ */
+ul li ul {
+  position: absolute;
+  top: 55px;
+  left: 0;
+}
+ul li ul li {
+  display: block;
+}
+ul li ul li a {
+  background-color: #efefef;
+  color: #444;
+}
+ul li ul li a:hover {
+  background-color: #ddd;
+}
+/* メイン */
+main h1 {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  font-size: 80px;
+  font-weight: bold;
+  color: aliceblue;
+  top: 45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+img {
+  width: 280px;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+}
+/*上の段のアニメ---------------------------------------------------*/
+div.loop_css1 {
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  width: 100vw;
+  height: 280px;
+  top: 100px;
+  left: 50%;
+  margin-left: -50vw;
+  overflow: hidden;
+}
+/* 1つ目の画像 */
+.loop_css1 img:first-child {
+  -webkit-animation: loop 50s -25s linear infinite;
+  animation: loop 50s -25s linear infinite;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+/* 2つ目の画像 */
+.loop_css1 img + img {
+  -webkit-animation: loop2 50s linear infinite;
+  animation: loop2 50s linear infinite;
+}
+/*アニメーション1*/
+@-webkit-keyframes loop {
+  0% {
+    -webkit-transform: translateX(250%);
+    -ms-transform: translateX(250%);
+    transform: translateX(250%);
+  }
+  to {
+    -webkit-transform: translateX(-250%);
+    -ms-transform: translateX(-250%);
+    transform: translateX(-250%);
+  }
+}
+@keyframes loop {
+  0% {
+    -webkit-transform: translateX(250%);
+    -ms-transform: translateX(250%);
+    transform: translateX(250%);
+  }
+  to {
+    -webkit-transform: translateX(-250%);
+    -ms-transform: translateX(-250%);
+    transform: translateX(-250%);
+  }
+}
+@-webkit-keyframes loop2 {
+  0% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-500%);
+    -ms-transform: translateX(-500%);
+    transform: translateX(-500%);
+  }
+}
+@keyframes loop2 {
+  0% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-500%);
+    -ms-transform: translateX(-500%);
+    transform: translateX(-500%);
+  }
+}
+/*下の段のアニメ---------------------------------------------------*/
+div.loop_css2 {
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  width: 100vw;
+  height: 280px;
+  top: 380px;
+  left: 50%;
+  margin-left: -50vw;
+  overflow: hidden;
+}
+/* 1つ目の画像 */
+.loop_css2 img:first-child {
+  -webkit-animation: loop3 50s -25s linear infinite;
+  animation: loop3 50s -25s linear infinite;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+/* 2つ目の画像 */
+.loop_css2 img + img {
+  -webkit-animation: loop4 50s 0s linear infinite;
+  animation: loop4 50s 0s linear infinite;
+}
+/*アニメーション2*/
+@-webkit-keyframes loop3 {
+  0% {
+    -webkit-transform: translateX(-250%);
+    -ms-transform: translateX(-250%);
+    transform: translateX(-250%);
+  }
+  to {
+    -webkit-transform: translateX(250%);
+    -ms-transform: translateX(250%);
+    transform: translateX(250%);
+  }
+}
+@keyframes loop3 {
+  0% {
+    -webkit-transform: translateX(-250%);
+    -ms-transform: translateX(-250%);
+    transform: translateX(-250%);
+  }
+  to {
+    -webkit-transform: translateX(250%);
+    -ms-transform: translateX(250%);
+    transform: translateX(250%);
+  }
+}
+@-webkit-keyframes loop4 {
+  0% {
+    -webkit-transform: translateX(-500%);
+    -ms-transform: translateX(-500%);
+    transform: translateX(-500%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes loop4 {
+  0% {
+    -webkit-transform: translateX(-500%);
+    -ms-transform: translateX(-500%);
+    transform: translateX(-500%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+/* サイトマップ（PC用） */
+aside {
+  display: none;
+}
+/* コピーライト */
+footer {
+  margin: 540px 0 0 0;
+}
+footer p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
